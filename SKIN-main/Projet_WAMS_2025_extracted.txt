@@ -1,0 +1,65 @@
+--- Page 1 ---
+UMBB, Facult´ e des Sciences MASTER 1 I2A,GL – Semestre 2
+D´ epartement d’informatique Mati` ere : WAMS
+Projet
+Pipeline Microservices Complet
+1. Contexte et objectifs
+—Descriptif du projet: chaque groupe doit pr´ eparer un document
+d´ ecrivant clairement le contexte choisi, les besoins m´ etier, les utilisa-
+teurs cibles, les contraintes fonctionnelles et techniques ainsi que la
+justification du choix du domaine applicatif.
+—Probl´ ematique unique: chaque groupe doit travailler sur une probl´ ematique
+sp´ ecifique et distincte des autres groupes. Les sujets doivent ˆ etre valid´ es
+par l’enseignant avant le d´ ebut de la phase d’impl´ ementation.
+—Composition des groupes: chaque groupe doit ˆ etre constitu´ e de 4
+` a 5 ´ etudiants.
+2. Contraintes techniques minimales
+Les projets doivent au minimum fournir :
+2.1 Application REST m´ etier
+Expose des endpoints CRUD et des endpoints m´ etiers (ex : /api/orders,
+/api/patients).
+2.2 Service d’authentification
+Service d´ edi´ e (ex. basic, JWT, session) qui d´ elivre des tokens et g` ere
+rˆ oles/permissions.
+--- Page 2 ---
+2
+2.3 Application UI/UX
+Application web classique qui consomme l’API et g` ere l’authentification.
+2.4 Communication asynchrone
+File de messages (RabbitMQ) pour au moins un flux (ex. notifications,
+traitement asynchrone).
+2.5 Service Registry/Discovery
+Consul pour enregistrer/d´ ecouvrir les instances.
+2.6 Reverse proxy / Load Balancer
+Traefik plac´ e en frontal pour routage et balance de charge.
+2.7 D´ eploiement multi-serveurs
+Chaque microservice doit ˆ etre d´ emarr´ e sur un serveur distinct.
+3. Architecture propos´ ee (exemple)
+3.1 Flux principaux
+— L’utilisateur se connecte via l’UI→token via Auth Service.
+— L’API valide localement ou via Auth Service.
+— Les tˆ aches lourdes passent par RabbitMQ.
+— Service registry + reverse proxy assurent le routage dynamique.
+4. Livrables
+1. D´ epˆ ot Git complet.
+2. Rapport technique (PDF).
+3. Pr´ esentation + d´ emonstration live.
+4. Preuve du d´ eploiement multi-serveurs.
+--- Page 3 ---
+3
+Figure 1– Sch´ ema d’architecture microservices — front, auth, api, worker,
+broker, discovery, proxy.
+5. Guide de d´ eploiement
+1. Pr´ eparation des serveurs.
+2. D´ emarrage du broker + registry.
+3. D´ eploiement des microservices.
+4. Configuration du reverse proxy.
+5. Tests de la communication asynchrone.
+6. Crit` eres d’´ evaluation
+— Conception : 25%
+--- Page 4 ---
+4
+— Impl´ ementation : 30%
+— D´ eploiement multi-serveurs : 20%
+— Asynchrone + s´ ecurit´ e : 15%
+— Pr´ esentation + documentation : 10%

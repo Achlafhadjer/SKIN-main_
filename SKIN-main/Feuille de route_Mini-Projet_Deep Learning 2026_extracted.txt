@@ -1,0 +1,52 @@
+--- Page 1 ---
+Module Apprentissage Profond, Master 1, I2A Pro, 2026 
+ 
+Feuille de route du Mini-Projet 
+ 
+1) Objectif du mini projet :  
+L'objectif de ce projet est de concevoir une application de vision artificielle performante en vous 
+appuyant sur l'apprentissage profond  (Deep Learning ). Ce modèle devra être intégré en tant que 
+micro-service au sein de l'architecture logicielle de votre mini -projet du module Web Avancé et 
+Micro-services. Pour ce faire, vous devez constituer des équipes de cinq étudiants issus du même 
+groupe de T P. Chaque délégué devra transmettre par email  au chargé de TP , avant les vacances, un 
+fichier Excel récapitulant la composition des équipes, les adresses email des membres ainsi que le 
+thème choisi par chaque équipe pour validation par le chargé de TP. 
+ 
+2) Thématiques au choix (exemples) :  
+Vous pouvez choisir l'un des thèmes suivants ou proposer d’avantage votre propre idée (sous 
+validation de votre chargé de TP) : 
+ Santé numérique : Diagnostic assisté par IA (ex: détection de pathologies sur radios X ou 
+lésions cutanées). 
+ E-commerce Intelligent : Recherche de produits par image ou classification automatique 
+d'articles. 
+ Sécurité & Smart City : Reconnaissance faciale pour accès, détection de port de masque ou 
+d'objets dangereux. 
+ Agriculture de précision : Identification de maladies sur les feuilles de plantes via photo. 
+ Contrôle de qualité industrielle : Identification des défauts de fabrication par imagerie 
+ Administration : Classification des documents, reconnaissance de signature… 
+ 
+3) Exigences techniques (partie de deep learning) :  
+ Dataset : Utilisation d'un dataset public (Kaggle, ImageNet, etc.) de taille suffisante. 
+ Modèle : Implémentation CNN ou Vit, avec l'utilisation de bonne stratégie de transfer learning 
+(VGG, ResNet, MobileNet, EfficientNet, MobileNet, ViT, etc.). 
+ Évaluation : Analyse rigoureuse des performances (Matrice de confusion, Courbes 
+Accuracy/Loss, Précision/Rappel/F-scor). 
+ Intégration micro-services : Le modèle de Deep Learning doit être considéré comme un micro-
+service indépendant qui doit communiquer avec le reste de votre application Web.  
+ 
+4)  Livrables et échéances : 
+Envoyer à votre chargé de TP (par email), avant la date limite, un seul dossier compressé par équipe 
+de 5 étudiants contenant : 
+1. Rapport unique (PDF) , incluant une section dédiée au "Deep Learning" de 15 à 20 pages. 
+Cette partie devra détailler le cadre applicatif, la méthodologie adoptée, le modèle choisi ainsi 
+qu'une description précise du jeu de données (dataset). Vous devrez également y présenter vos 
+expérimentations, analyser les résultats obtenus dans une partie discussion, et conclure par une 
+synthèse ouvrant sur des perspectives d'évolution. 
+2. Présentation PPT (Support visuel pour la soutenance) + démonstration vidéo 
+3. Code Source : archive (incluant le fichier du modèle .pth). 
+ Date limite de dépôt : 30 Avril. 
+ Soutenances : Début mai (le planning sera  communiqué par le chargé de TP). 
+ Note finale de CC = Note du mini-projet sur 18 points + note de présence et d’assiduité sur 2 
+points. 
+ 
+ Bon courage 
